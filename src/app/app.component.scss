@@ -1,0 +1,23 @@
+@import "~src/variables.scss";
+
+.header {
+    margin: .97rem;
+}
+.main-container{
+    min-height: 85.1vh;
+    margin: 0 2rem 0 2rem;
+}
+.basket {
+    position: fixed;
+    bottom: 50%;
+    right: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fa-shopping-basket {
+    color: $primaryColor;
+}
+.remove {
+    color: red;
+    cursor: pointer;
+}

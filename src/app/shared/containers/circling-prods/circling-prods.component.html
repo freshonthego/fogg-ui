@@ -1,0 +1,9 @@
+<div>
+    <p-carousel [value]="products" [numVisible]="3" [numScroll]="1" [circular]="false">
+        <ng-template let-product pTemplate="item">
+            <app-prod-summary [url]="'assets/images/tilda.jpg'" [name]="'Tilda Basmati Rice'"
+                [cost]="'3.00'">
+            </app-prod-summary>
+        </ng-template>
+    </p-carousel>
+</div>

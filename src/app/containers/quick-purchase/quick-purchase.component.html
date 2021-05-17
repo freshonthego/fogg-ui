@@ -1,0 +1,50 @@
+<div class="p-grid">
+    <div class="p-col-1"></div>
+    <div class="p-col">
+        <span class="p-input-icon-right">
+            <i class="pi pi-search"></i>
+            <input type="text" pInputText class="search">
+        </span>
+    </div>
+    <div class="p-col-2"></div>
+</div>
+<div class="p-grid">
+    <div class="p-col-1"></div>
+    <div class="p-col">
+        <span *ngFor="let category of categories; let i = index">
+            <p-chip class="chip" *ngIf="!category.selected" (click)="selectionChange(i)" id="nohighlight" [label]="category.category"></p-chip>
+            <p-chip class="chip" *ngIf="category.selected" (click)="selectionChange(i)" id="highlight" [label]="category.category"></p-chip>
+        </span>
+    </div>
+    <div class="p-col-2"></div>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-1"></div>
+    <div class="p-col">
+        <p-card>
+            <div class="p-grid">
+                <div class="p-col-2 p-d-flex p-ai-center">
+                    <img src="assets/images/tilda.jpg" class="prod-qp-image">
+                </div>
+                <div class="p-col-3 p-d-flex p-ai-center">
+                    Tilda Basmati rice
+                </div>
+                <div class="p-col-2 p-d-flex p-ai-center">
+                    $3.00
+                </div>
+                <div class="p-col-3 p-d-flex p-ai-center" id="basketQuantity">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon">-</span>
+                        <input class="quantity" type="number" pInputText value=1 min=1 max=10>
+                        <span class="p-inputgroup-addon">+</span>
+                    </div>
+                </div>
+                <div class="p-col-2 p-d-flex p-ai-center">
+                    <button pButton pRipple type="button" class="p-button-rounded">To Basket</button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="p-col-2"></div>
+</div>

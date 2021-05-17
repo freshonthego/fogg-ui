@@ -1,0 +1,7 @@
+<p-carousel [value]="infos" [numVisible]="1" [numScroll]="1" [autoplayInterval]="3000" [circular]="true">
+    <ng-template let-info pTemplate="item">
+        <p-card [style]=info.style class="info-card">
+            {{info.name}}
+        </p-card>
+    </ng-template>
+</p-carousel>

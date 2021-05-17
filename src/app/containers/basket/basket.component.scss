@@ -1,0 +1,30 @@
+.container {
+    margin: 1rem 0 1rem 0;
+}
+.prod-basket-image {
+    height: 15vh;
+    width: auto;
+}
+.prod-basket-quantity {
+    flex: 0 !important;
+    width: 2.5rem !important;
+    text-align: center;
+}
+.remove {
+    font-size: .90rem;
+}
+.prod-name {
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}
+.prod-cost {
+    font-size: 1.25rem;
+}
+.total {
+    font-size: 1.5rem;
+}
+.checkout {
+    right: 3vh;
+    top: 15vh;
+    position: fixed;
+}

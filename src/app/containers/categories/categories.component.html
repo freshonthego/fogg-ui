@@ -1,0 +1,5 @@
+<!-- <p-tabMenu [model]="categories"></p-tabMenu> -->
+<div class="p-grid categories">
+    <div *ngFor="let category of categories; let i = index" 
+    class="p-col" [ngClass]="categoryClass(i)" (click)="selected(i)">{{category}}</div>
+</div>

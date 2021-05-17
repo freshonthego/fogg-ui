@@ -1,0 +1,72 @@
+@import "~src/variables.scss";
+
+.billingItem {
+    margin-bottom: .75rem;
+}
+.subTotal {
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+}
+.total {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+}
+.pymtBtn {
+    margin: 1rem 0 1rem 0 !important;
+}
+
+/*********** Stepper 
+.wrapper-progressBar {
+    width: 100%
+}
+
+.progressBar li {
+    list-style-type: none;
+    float: left;
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+
+.progressBar li:before {
+    content: " ";
+    line-height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+    background-color: white
+}
+
+.progressBar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(185, 177, 177);
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressBar li:first-child:after {
+    content: none;
+}
+
+.progressBar li.completed {
+    color: $primaryColor;
+}
+
+.progressBar li.completed:before {
+    border-color: $primaryColor;
+    background-color: $primaryColor
+}
+
+.progressBar .completed:after {
+    background-color: $primaryColor;
+}
+*/

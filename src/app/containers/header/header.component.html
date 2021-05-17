@@ -1,0 +1,33 @@
+<div class="p-grid p-ai-center">
+    <div class="p-col-3 logo" routerLink="/home">Logo</div>
+    <div class="p-col-4 p-fluid">
+        <span class="p-input-icon-right">
+            <i class="pi pi-search"></i>
+            <input type="text" pInputText [(ngModel)]="searchText" class="search">
+        </span>
+    </div>
+    <div class="p-col-2 p-text-right p-ai-center">
+        <div *ngIf="serviceSelected=='delivery'">
+            <div *ngIf="regionButton">
+                <p-button (click)="editRegion()">Select Region</p-button>
+            </div>
+            <div *ngIf="regionSelected">
+                <span class="region" (click)="editRegion() ">{{regionText}}</span>
+                <div class="schedule">Next delivery on May 20th</div>
+            </div>
+            <div *ngIf="regionList">
+                <input type="text" pInputText #region (focusout)="focusoutHandler()" [(ngModel)]="regionText"
+                    list="regionslist" class="regionInput">
+            </div>
+        </div>
+    </div>
+    <div class="p-col p-text-right p-ai-center">
+        <p-selectButton id="serviceoptions" [options]="serviceOptions" [(ngModel)]="serviceSelected" optionLabel="label"
+            optionValue="value"></p-selectButton>
+    </div>
+    <div class="p-col p-text-right p-ai-center">Sign in/Sign up</div>
+</div>
+
+<datalist id="regionslist">
+    <option *ngFor="let region of regions" [value]="region">
+</datalist>

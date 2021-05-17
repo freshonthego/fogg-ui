@@ -1,0 +1,37 @@
+<div class="p-grid prod-details-container">
+    <div class="p-col-2"></div>
+    <div class="p-col-4 p-d-flex p-jc-center">
+        <img src="assets/images/tilda.jpg" class="prod-details-image">
+    </div>
+    <div class="p-col-4 p-d-flex p-jc-center p-ai-center">
+        <div>
+            <div class="p-d-flex p-jc-start">
+                <h1>Tilda Basmati Rice</h1>
+            </div>
+
+            <div class="p-d-flex p-jc-start">
+                <h2>$3.00</h2>
+            </div>
+
+            <div id="basketQuantity">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon">-</span>
+                    <input class="quantity" type="number" pInputText value=1 min=1 max=10>
+                    <span class="p-inputgroup-addon">+</span>      
+                </div>
+            </div>
+
+            <div class="p-d-flex p-jc-start toBasketBtn" id="primary">
+                <button pButton pRipple type="button" class="p-button-rounded" (click)="productAdded()">To Basket</button>
+            </div>
+            <div class="p-d-flex p-jc-start prodDesc">
+                Here is the description of the product. Here is the description of the product.
+                Here is the description of the product. Here is the description of the product.
+            </div>
+        </div>
+    </div>
+    <div class="p-col-2"></div>
+</div>
+
+<h2>Options</h2>
+<app-circling-prods></app-circling-prods>

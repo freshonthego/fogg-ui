@@ -1,0 +1,13 @@
+<div>
+    <div *ngFor="let row of rows">
+        <div class="p-grid productsRow">
+            <div class="p-col"></div>
+            <div *ngFor="let col of row" class="p-col">
+                <app-prod-summary *ngIf="col!='null'" [url]="'assets/images/tilda.jpg'"
+                    [name]="'Tilda Basmati Rice'" [cost]="'3.00'">
+                </app-prod-summary>
+            </div>
+            <div class="p-col"></div>
+        </div>
+    </div>
+</div>

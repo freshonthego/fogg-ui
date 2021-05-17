@@ -1,0 +1,61 @@
+<app-circling-info></app-circling-info>
+
+<div class="p-grid">
+    <div class="p-col-3">
+        <p-card class="home-card">Top Products</p-card>
+    </div>
+    <div class="p-col-3">
+        <p-card class="home-card">New in Shelf</p-card>
+    </div>
+    <div class="p-col-3">
+        <p-card class="home-card" (click)="navigateTo('/quickPurchase')">Quick Purchase</p-card>
+    </div>
+    <div class="p-col-3">
+        <p-card class="home-card">Offers</p-card>
+    </div>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-3">
+        <p-card class="home-card">SV Home Products</p-card>
+    </div>
+    <div class="p-col-3">
+        <p-card class="home-card">Kitchen Utensils</p-card>
+    </div>
+    <div class="p-col-3">
+        <p-card class="home-card">Ready to Eat</p-card>
+    </div>
+    <div class="p-col-3">
+        <p-card class="home-card">Care for Health</p-card>
+    </div>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-2"></div>
+    <div class="p-col">
+        <p-card class="subscription-card">
+            <div class="p-grid">
+                <div class="p-col">
+                    <h3>Let's be connected!</h3>
+                    <p>We send latest information on offers and products to our customers.
+                        Be part of our WhatsApp group or subscribe to our newsletter to receive latest
+                        information.
+                    </p>
+                </div>
+                <div class="p-col">
+                    <div class="p-d-flex p-jc-start p-ai-center">
+                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true" style="color: #25D366"></i>
+                        <span class="whatsapp">647-477-8256</span>
+                    </div>
+                    <div class="p-d-flex p-jc-start p-ai-center">
+                        <div class="p-inputgroup">                            
+                            <input type="text" pInputText placeholder="Email">
+                            <button type="button" pButton pRipple label="Subscribe"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="p-col-2"></div>
+</div>

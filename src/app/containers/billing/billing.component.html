@@ -1,0 +1,83 @@
+<div class="p-grid">
+    <div class="p-col">
+    </div>
+    <div class="p-col-4">
+        <h4>Delivery Address</h4>
+        <h5>Address</h5>
+        <div>3 Smoothwater Terrace</div>
+        <div>Markham</div>
+        <h5>ZIP Code</h5>
+        <div>L6B 0E6</div>
+        <h5>Contact number</h5>
+        <div>647 783 4999</div>
+    </div>
+    <div class="p-col-6">
+        <h4>Order</h4>
+        <div class="p-grid billingItem">
+            <div class="p-col">Tilda Basmati rice</div>
+            <div class="p-col-1">X 1</div>
+            <div class="p-col">3.00</div>
+        </div>
+        <div class="p-grid billingItem">
+            <div class="p-col">SV Idly rice</div>
+            <div class="p-col-1">X 1</div>
+            <div class="p-col">9.00</div>
+        </div>
+        <div class="p-grid billingItem">
+            <div class="p-col">Rajam chukku</div>
+            <div class="p-col-1">X 1</div>
+            <div class="p-col">5.00</div>
+        </div>
+        <div class="p-grid billingItem">
+            <div class="p-col">Cocunut oil</div>
+            <div class="p-col-1">X 1</div>
+            <div class="p-col">7.00</div>
+        </div>
+        <div class="p-grid billingItem">
+            <div class="p-col">Groundnut oil</div>
+            <div class="p-col-1">X 1</div>
+            <div class="p-col">9.00</div>
+        </div>
+        <div class="p-grid">
+            <div class="p-col subTotal">Sub total</div>
+            <div class="p-col-1"></div>
+            <div class="p-col subTotal">33.00</div>
+        </div>
+        <div class="p-grid billingItem">
+            <div class="p-col">HST</div>
+            <div class="p-col-1">13%</div>
+            <div class="p-col">4.00</div>
+        </div>
+        <div class="p-grid">
+            <div class="p-col total">Total</div>
+            <div class="p-col-1"></div>
+            <div class="p-col total">37.00</div>
+        </div>
+        <div class="p-grid">
+            <div class="p-col">
+                <p-selectButton id="paymentMode" [options]="paymentOptions" [(ngModel)]="paymentSelected" 
+            optionLabel="label" optionValue="value" (onChange)="paymentModeSelected()"></p-selectButton>
+            </div>
+        </div>
+        <div *ngIf="orderText.length > 0" class="pymtBtn">
+            <p-button>{{orderText}}</p-button>
+        </div>
+    </div>
+    <div class="p-col">
+    </div>
+</div>
+
+
+
+<!-- Stepper -->
+<!-- <div class="row">
+    <div class="col-xs-12 col-md-8 offset-md-2 block border">
+        <div class="wrapper-progressBar">
+            <ul class="progressBar">
+                <li class="completed">Login</li>
+                <li>Billing</li>
+                <li>Paid</li>
+            </ul>
+        </div>
+    </div>
+</div> -->

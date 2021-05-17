@@ -1,0 +1,14 @@
+<div class="prod-summary-container">
+    <div class="p-d-flex p-jc-center" (click)="goToProdDetails()">
+        <img src={{url}} class="prod-summary-image">
+    </div>
+    <div class="p-d-flex p-jc-center prod-name" (click)="goToProdDetails()">
+        {{name}}
+    </div>
+    <div class="p-d-flex p-jc-center">
+        <span class="prod-cost">${{cost}}</span>
+    </div>
+    <div class="p-d-flex p-jc-center" id="primary">
+        <button pButton pRipple type="button" class="p-button-rounded" (click)="productAdded()">To Basket</button>
+    </div>
+</div>

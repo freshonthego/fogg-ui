@@ -1,1 +1,132 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~src/variables.scss";
+
+body {
+    background-color: $baseColor;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: $fontColor;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*prime ng override starts*/
+.p-tabmenu .p-tabmenu-nav {
+    background-color: $baseColor !important;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+    background-color: $baseColor !important;
+}
+
+.p-component {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.p-carousel .p-carousel-indicators {
+    display: none;
+}
+
+.info-card .p-card .p-card-body {
+    height: 20vh !important
+}
+
+.home-card .p-card .p-card-body {
+    margin: 1vh 1vh 0 1vh;
+    height: 25vh !important
+}
+
+p-selectbutton .p-buttonset .p-button {
+    background-color: whitesmoke !important;
+    border-color: $primaryColor !important;
+    color: $fontColor !important;
+}
+
+p-selectbutton .p-button.p-highlight {
+    background-color: $primaryColor !important;
+    border-color: $secondaryColor !important;
+    color: white !important;
+}
+
+p-selectbutton#serviceoptions .p-button{
+    padding: 0.20rem !important;
+    font-size: .81rem !important;
+}
+#nohighlight .p-chip {
+    background-color: whitesmoke !important;
+    color: $fontColor !important;
+    cursor: pointer;
+}
+#highlight .p-chip {
+    background-color: $primaryColor !important;
+    color: white !important;
+    cursor: pointer;
+}
+.p-tabmenuitem.p-highlight .p-menuitem-link {
+    color: $primaryColor !important;
+    border-color: $primaryColor !important;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link:not(.p-disabled):focus {
+    box-shadow: 0 0 0 0 $primaryShadow !important;
+}
+
+.p-inputtext:enabled:focus:hover{
+    border-color: $primaryColor !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.p-button {
+    background-color: $primaryColor !important;
+    border-color: $secondaryColor !important;
+    color: white !important;
+}
+
+#basketQuantity.p-inputgroup .p-button {
+    background-color: $baseColor !important;
+    border-color: $baseColor !important;
+    color: $fontColor !important;
+}
+
+#basketQuantity .p-inputtext {
+    width: 2.5rem !important;
+}
+
+.p-card-content {
+    padding: 0px !important;
+}
+
+#basket div.p-card {
+    border-radius: 50% !important;
+    height: 5.5rem;
+    width: 5.5rem;
+    background-color: $buttonBg !important;
+}
+
+#basket div.p-card:hover {
+    background-color: $buttonHoverBg !important;
+}
+
+#basket div.p-card:active {
+    background-color: $buttonActiveBg !important;
+}
+
+.p-card-body {
+    padding: 0.5rem !important;
+}
+
+.p-scrollpanel .p-scrollpanel-bar {
+    background-color: $baseColor !important;
+}
+
+/*prime ng override ends*/
+
+/* to remove arrows in input type number starts*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* to remove arrows in input type number ends*/
