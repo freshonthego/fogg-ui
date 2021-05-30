@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { TabMenuModule } from 'primeng/tabmenu';
@@ -15,6 +18,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ChipModule } from 'primeng/chip';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +35,10 @@ import { BasketComponent } from './containers/basket/basket.component';
 import { BillingComponent } from './containers/billing/billing.component';
 import { QuickPurchaseComponent } from './containers/quick-purchase/quick-purchase.component';
 import { FooterComponent } from './containers/footer/footer.component';
+import { AboutUsComponent } from './containers/about-us/about-us.component';
+import { ContactComponent } from './containers/contact/contact.component';
+import { TncComponent } from './containers/tnc/tnc.component';
+import { PrivacyComponent } from './containers/privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +54,11 @@ import { FooterComponent } from './containers/footer/footer.component';
     BasketComponent,
     BillingComponent,
     QuickPurchaseComponent,
-    FooterComponent
+    FooterComponent,
+    AboutUsComponent,
+    ContactComponent,
+    TncComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -64,6 +76,11 @@ import { FooterComponent } from './containers/footer/footer.component';
     InputNumberModule,
     CheckboxModule,
     ChipModule,
+    InputTextareaModule,
+    CommonModule,
+    GoogleMapsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

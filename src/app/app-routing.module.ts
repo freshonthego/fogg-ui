@@ -6,6 +6,10 @@ import { ProdDetailsComponent } from './containers/prod-details/prod-details.com
 import { BasketComponent } from './containers/basket/basket.component';
 import { BillingComponent } from './containers/billing/billing.component';
 import { QuickPurchaseComponent } from './containers/quick-purchase/quick-purchase.component';
+import { AboutUsComponent } from './containers/about-us/about-us.component';
+import { TncComponent } from './containers/tnc/tnc.component';
+import { PrivacyComponent } from './containers/privacy/privacy.component';
+import { ContactComponent } from './containers/contact/contact.component';
 
 const routes: Routes = [
   {path: 'productlist', component: ProductListComponent },
@@ -14,6 +18,10 @@ const routes: Routes = [
   {path: 'basket', component: BasketComponent},
   {path: 'billing', component: BillingComponent},
   {path: 'quickPurchase', component: QuickPurchaseComponent},
+  {path: 'aboutus', component: AboutUsComponent},
+  {path: 'tnc', component: TncComponent},
+  {path: 'privacy', component: PrivacyComponent},
+  {path: 'contact', component: ContactComponent},
   {path: '**', component: HomeComponent },
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
